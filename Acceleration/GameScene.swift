@@ -28,7 +28,12 @@ class GameScene: SKScene {
     
     func configure(){
         //back
-        
+        back.size = myBoundSize
+        back.position = CGPoint(x: CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+        let physicsBody1 = SKPhysicsBody()
+        back.physicsBody?.friction = 0.9
+        back.physicsBody?.dynamic = false
+        self.addChild(back)
         
         //images
         road.size = myBoundSize

@@ -15,10 +15,10 @@
 		C67BB4A91B0211120085F9EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C67BB4A81B0211120085F9EB /* Images.xcassets */; };
 		C67BB4AC1B0211120085F9EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67BB4AA1B0211120085F9EB /* LaunchScreen.xib */; };
 		C67BB4B81B0211120085F9EB /* AccelerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BB4B71B0211120085F9EB /* AccelerationTests.swift */; };
-		C67BB4C51B0211E20085F9EB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = C67BB4C11B0211E20085F9EB /* back.png */; };
-		C67BB4C61B0211E20085F9EB /* car1.png in Resources */ = {isa = PBXBuildFile; fileRef = C67BB4C21B0211E20085F9EB /* car1.png */; };
-		C67BB4C71B0211E20085F9EB /* carA.png in Resources */ = {isa = PBXBuildFile; fileRef = C67BB4C31B0211E20085F9EB /* carA.png */; };
-		C67BB4C81B0211E20085F9EB /* carB.png in Resources */ = {isa = PBXBuildFile; fileRef = C67BB4C41B0211E20085F9EB /* carB.png */; };
+		C67BB4CD1B0B47340085F9EB /* carB.png in Resources */ = {isa = PBXBuildFile; fileRef = C67BB4C91B0B47340085F9EB /* carB.png */; };
+		C67BB4CE1B0B47340085F9EB /* carA.png in Resources */ = {isa = PBXBuildFile; fileRef = C67BB4CA1B0B47340085F9EB /* carA.png */; };
+		C67BB4CF1B0B47340085F9EB /* car1.png in Resources */ = {isa = PBXBuildFile; fileRef = C67BB4CB1B0B47340085F9EB /* car1.png */; };
+		C67BB4D01B0B47340085F9EB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = C67BB4CC1B0B47340085F9EB /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +44,10 @@
 		C67BB4B11B0211120085F9EB /* AccelerationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelerationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67BB4B61B0211120085F9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C67BB4B71B0211120085F9EB /* AccelerationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerationTests.swift; sourceTree = "<group>"; };
-		C67BB4C11B0211E20085F9EB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = ../../../Accelerator/back.png; sourceTree = "<group>"; };
-		C67BB4C21B0211E20085F9EB /* car1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car1.png; path = ../../../Accelerator/car1.png; sourceTree = "<group>"; };
-		C67BB4C31B0211E20085F9EB /* carA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carA.png; path = ../../../Accelerator/carA.png; sourceTree = "<group>"; };
-		C67BB4C41B0211E20085F9EB /* carB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carB.png; path = ../../../Accelerator/carB.png; sourceTree = "<group>"; };
+		C67BB4C91B0B47340085F9EB /* carB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carB.png; path = Images.xcassets/images/carB.png; sourceTree = "<group>"; };
+		C67BB4CA1B0B47340085F9EB /* carA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carA.png; path = Images.xcassets/images/carA.png; sourceTree = "<group>"; };
+		C67BB4CB1B0B47340085F9EB /* car1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car1.png; path = Images.xcassets/images/car1.png; sourceTree = "<group>"; };
+		C67BB4CC1B0B47340085F9EB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Images.xcassets/images/back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +92,13 @@
 				C67BB49D1B0211120085F9EB /* AppDelegate.swift */,
 				C67BB49F1B0211120085F9EB /* GameScene.sks */,
 				C67BB4A11B0211120085F9EB /* GameScene.swift */,
+				C67BB4C91B0B47340085F9EB /* carB.png */,
+				C67BB4CA1B0B47340085F9EB /* carA.png */,
+				C67BB4CB1B0B47340085F9EB /* car1.png */,
+				C67BB4CC1B0B47340085F9EB /* back.png */,
 				C67BB4A31B0211120085F9EB /* GameViewController.swift */,
 				C67BB4A51B0211120085F9EB /* Main.storyboard */,
 				C67BB4A81B0211120085F9EB /* Images.xcassets */,
-				C67BB4C11B0211E20085F9EB /* back.png */,
-				C67BB4C21B0211E20085F9EB /* car1.png */,
-				C67BB4C31B0211E20085F9EB /* carA.png */,
-				C67BB4C41B0211E20085F9EB /* carB.png */,
 				C67BB4AA1B0211120085F9EB /* LaunchScreen.xib */,
 				C67BB49B1B0211120085F9EB /* Supporting Files */,
 			);
@@ -211,13 +211,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67BB4AC1B0211120085F9EB /* LaunchScreen.xib in Resources */,
-				C67BB4C51B0211E20085F9EB /* back.png in Resources */,
-				C67BB4C61B0211E20085F9EB /* car1.png in Resources */,
-				C67BB4C81B0211E20085F9EB /* carB.png in Resources */,
+				C67BB4CD1B0B47340085F9EB /* carB.png in Resources */,
 				C67BB4A91B0211120085F9EB /* Images.xcassets in Resources */,
+				C67BB4CE1B0B47340085F9EB /* carA.png in Resources */,
+				C67BB4CF1B0B47340085F9EB /* car1.png in Resources */,
+				C67BB4D01B0B47340085F9EB /* back.png in Resources */,
 				C67BB4A01B0211120085F9EB /* GameScene.sks in Resources */,
 				C67BB4A71B0211120085F9EB /* Main.storyboard in Resources */,
-				C67BB4C71B0211E20085F9EB /* carA.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
