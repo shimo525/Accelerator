@@ -16,7 +16,7 @@ class GameScene: SKScene {
     }
     
     //UI
-    var back = SKSpriteNode()
+    var back = SKSpriteNode(imageNamed: "carA")
     var mainCar = SKSpriteNode(imageNamed: "car1")
     var carA = SKSpriteNode(imageNamed: "carA")
     var carB = SKSpriteNode(imageNamed: "carB")
@@ -31,32 +31,39 @@ class GameScene: SKScene {
         back.size = myBoundSize
         back.position = CGPoint(x: CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         let physicsBody1 = SKPhysicsBody()
-        back.physicsBody?.friction = 0.9
-        back.physicsBody?.dynamic = false
+//        physicsBody1.mass = 1000000
+        physicsBody1.friction = 1.0
+        physicsBody1.dynamic = false
+//        physicsBody1.
+        back.physicsBody = physicsBody1
         self.addChild(back)
         
         //images
         road.size = myBoundSize
         road.position = CGPoint(x: CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
-        road.physicsBody = SKPhysicsBody()
-        road.physicsBody?.friction = 0.7
+        let physicsBody2 = SKPhysicsBody()
+        physicsBody2.mass = 1000000000
+        physicsBody2.friction = 1.0
+        road.physicsBody = physicsBody2
         self.addChild(road)
         
         mainCar.position = CGPoint(x: CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         self.addChild(mainCar)
         
         //physics
-        self.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
-        self.physicsBody?.friction = 0.9
+        physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+//        self.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
+//        self.physicsBody?.friction = 0.9
         
-        road.physicsBody?.applyForce(CGVector(dx: 0, dy: 1))
+        road.physicsBody?.applyForce(CGVector(dx: 0, dy: -80))
+//        road.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 1))
         
     }
    
     
     override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent) {
 //        moveByAcceleration(0.5)
-        road.physicsBody?.applyForce(CGVector(dx: 0, dy: 5))
+        road.physicsBody?.applyForce(CGVector(dx: 0, dy: -1000))
         
     }
     
